@@ -1,0 +1,561 @@
+
+            /******************** NAVBAR ********************/
+            #logoChocopap {
+                height: 5em;
+                width: 5em;
+            }
+            * button {cursor: pointer;}
+            .ShopIcon {
+                height: 1.5em;
+                width: 1.5em;
+            }
+            #Panier span{
+                    display: none;
+            }
+            .burger-bar , .navBar-Burger{display: none;}
+            .navbar {
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                background-color:#B65F28;
+                font-size: calc(0.5rem + 1.5vw);
+            }
+            .navbar ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;
+                width: 40%;
+                margin: 0  ;padding: 0 ;
+
+            }
+            #Panier {
+                display: flex;
+            }
+            .navbar li {
+                color: #FFD543;
+                font-size: 1.8rem;
+            }
+            .navbar li a {
+                text-decoration: dashed;
+                color: #FFD543; 
+            }
+            #icons {
+                cursor: pointer;
+                display: none;
+            }
+            .navbar a:hover , #nav button:hover {
+                color:#2C1E1E ;
+            }
+            .navbar button {
+                background-color: #B65F28;
+                border: none;
+                color: #FFD543;
+                cursor: pointer;
+            }
+            .PageShoppingPage {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                height: auto;
+               border: black 1px solid;
+                font-size: 1.7em;
+                position: absolute;
+                background-color: #b8b8b8;
+                left: 49.8%;
+                z-index: 5;
+            }
+            
+            .ProductList li > div {
+                display: flex;
+                gap: 1vh; 
+           }
+            .ProductItemInCart img {
+                width: 80px;
+                height: 90px;
+                margin-bottom: 3vh;
+                border: 1px solid #B65F28;
+            }
+            .CartTextPrice {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+            }
+            .ContentItemShopping {
+                margin:5vh 0 5vh 0;
+                width: 100%            
+             }
+             .buttonincreDecre button{
+                margin-left: 2vh;
+                width: 30px;
+                height: 30px;
+                background-color: #B65F28;
+                cursor: pointer;
+             }
+             .buttonincreDecre span {
+                padding-left: 20px;
+             }
+            .ProductList  {list-style-type: none;}
+            .ProductList a {text-decoration: none; color:black;}
+            .CrossShopping , .CrossShopping::before
+            {
+                display: block;
+                width: 50px ;
+                height: 7px;
+                background-color: black;
+                cursor: pointer;
+                border-radius: 3px ;
+            }
+            .CrossShopping {
+                margin: 3vh 95% 0 2vh;
+                transform: rotate(45deg);
+            }
+            .CrossShopping::before {
+              content: "";     
+              transform: rotate(90deg);
+            }
+            .PageShoppingPage.hiddenShopp {
+                left: -110%;
+            }  
+            .resultShopping, .TitleShopping {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                border: black 1px solid;
+            }
+            .resultShopping button  {
+                width: 70%;
+                margin-bottom: 2vh;
+                padding:10px 0;
+                background-color: #B65F28;
+                color: #FFD543;
+                font-size: 0.8em;
+            }
+            
+
+            
+                        /**************** PAGE CONTENT INDEX *******************/
+            
+            body {
+            background-color: #D3D3D3;
+            }
+            .titlecarrousel {
+                font-size: 8em;
+                color: #FFD543;
+                position: absolute;
+                top: 10%;
+                left: 10%;
+                width: 80%;
+                height: 80%;
+            }
+            .thumbs-wrapper {
+                display: none;
+                visibility: none;
+            }
+            .Carrouselcomponent {
+                position: relative;
+            }
+            
+            .boutonvoirboutique {
+                font-size: 1.5em;
+                color: #FFD543;
+                background-color: #B65F28;
+                padding: 20px;
+                border: none;
+                text-decoration: none;
+                position: absolute;
+                top: 65%;
+                left: 40%;
+                width: 20%;
+            }
+                        /*********** PAGE CONTENT BOUTIQUE *****************/
+            #chocolat li {list-style: none;}
+             .pageboutique h1 {
+                margin-left: 45%;
+                 font-size: 3em ;
+             }
+            .pagecontent {  
+                display: flex;
+            }
+            .pagecontent h3 {
+                font-size: 1.5em
+             }
+            #chocolat h2 ,
+            .ButtonToggleContent h2 ,#prix h2 ,#Notes h2{
+                text-decoration: underline;
+                font-size: 1.5em;
+            }
+            .filtreboutique {
+                font-weight: bold;
+                background-color: #b65e28c7;
+                border-radius: 5px  ;
+                font-size: 1.3em;
+                padding: 2vh 5vh 5vh 1vh;
+                margin: 0 0 2vh 2vh;
+                height: 90%;
+                width: 20%;
+            }
+            .filtreboutique ul {
+                padding: 0;
+            }
+            .listeboutique  li {
+                display: flex;
+                gap: 1vh;
+            }
+            .filtreboutique button{
+                display: none;
+            }
+            .listeboutique2 > div {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 5%;
+            }
+            .NotesLabel > div , .Prixlabel > div {
+                display: flex;
+                gap: 5%;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 5%;
+            }
+            .InputPageContent { width: 25%;}
+                
+            
+                    /***************** PAGE CONTENT LISTE PRODUIT ************************/
+            
+            
+            
+             .produitboutique {
+                  display: grid;
+                 grid-template-columns: repeat(3, 1fr);
+                 width: 90%;
+                 gap: 5%;
+                 height: auto;
+             }
+             .produitboutique li {
+                list-style-type: none;
+                font-size: 1.5em;   
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 5vh;
+            }
+            .produitboutique p {
+                margin: 1vh;
+            }
+
+            .phototproduit {
+                border: #B65F28 2px solid;
+                border-radius: 10px;
+                width: 60%;
+                height: 60%;
+            }      
+            .panier {
+                display: flex;
+                gap: 5%;
+            }
+            .leftbar {
+                margin-bottom: 10%;
+            }
+            .descriptionproduit {
+                width: 35%;
+                height: 45vh;
+            }
+            .NomProduit {
+                display: flex;
+                gap: 15vh;
+                align-items: top;
+            }
+            .NomProduit > div {
+                width: 35%;
+                font-size: 1.2em;
+            }
+            .NomProduit p {
+                font-size: 1.2em;
+                margin-bottom: 5vh;
+            }
+            .NomProduit input {
+                width: 10%
+            }
+            .NomProduit input , .NomProduit button {
+                font-size: 1.3em;
+                background-color: #B65F28 ;
+                color: #FFD543;
+            }
+            .NomProduit button {
+                margin-left: 3vh;
+                box-shadow: 0px 10px 8px -1px rgba(0,0,0,0.1);
+                ;
+            }
+            .ingredient {
+                font-size: 1.7em;
+            }
+            .containproduct > div {
+                margin-bottom: 5vh;
+            }
+                            /**************** PAGE PRODUCT ****************/
+
+
+            .ProductDontfind {
+                margin: 25vh 0 25vh 0%;
+                font-size: 2em;
+            }
+            .ProductById {
+                display: flex;
+                margin: 15vh 15vh 15vh 10vh;
+                align-items: start;
+            }   
+            .ImgById img {
+                width: 50%;
+                margin: 0 0 0 10%;
+            }
+            .TextByID , #reset button{
+                font-size: 1.6em;    
+            }
+            .buttonincreDecre button {
+                color: #FFD543;
+            }
+            .buttonincreDecre {
+                display: flex;
+                align-items: center;
+            }
+             #reset button{
+                margin-left: 30%;
+                width: 100%;
+                height: auto;
+                padding: 5px 5px;
+            }
+                            /************** FOOTER *******************/ 
+            
+            footer {
+                background-color: #B65F28;
+                
+            }
+            .footer {
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #B65F28;
+                margin-bottom:0;
+            }
+            .footer > div {
+                color: #FFD543;
+                width: 30%;
+                font-size: 1.4em;
+                padding: 0 2em;
+                font-weight: bold;
+            }
+            .footer h3 {
+                font-size: 1.5em;
+            }
+
+            .footer .fa-brands {
+                float: right;
+                font-size: 3.3em;
+                padding-right:0.5em;
+            }
+            .footer a:visited {
+                color:#FFD543 ;
+            }
+            
+                            /*************** MOBILE     **********************/
+            
+            
+            @media (max-width: 650px){
+                #Panier {
+                    display: flex;
+                    align-items: center;
+                    margin-top: -20px;
+                    height: 100%;
+                }
+                #Panier span{
+                    display: block;
+                }   
+                #Panier button{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2vh;
+                }  
+
+                .ShopIcon {
+                    height: 1em;
+                    width: 1em;
+                } 
+                .burger-bar, 
+                .navBar-Burger{
+                    display: block;
+                    cursor: pointer;
+                }
+                .navBarLogo {
+                   display: flex;
+                   align-items: center;
+                    width: 100%;
+                    gap: 70%;
+                }
+                .burger-bar,
+                .burger-bar::before,
+                .burger-bar::after{
+                    display: block;
+                    width: 45px;
+                    height:5px;
+                    border-radius: 3px ;
+                    background-color: #FFD543;
+                }
+                .burger-bar::before,
+                .burger-bar::after {
+                    content: "";
+                    position: absolute;
+                }
+                .burger-bar::after { transform: translateY(15px);}
+                .burger-bar::before {transform: translateY(-15px);}
+                .navbar  {
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: baseline;
+                }
+
+                
+                .navbar li {padding-bottom: 5vw;}
+                .navbar li:last-child{padding-bottom: 0;}
+                .navbar ul   {
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 0;
+                    position: relative;
+                    padding-bottom: 2vw;
+                    background-color: #B65F28;
+                    border-top:#FFD543 1px solid ;
+                    display: none;
+                }
+                nav.navbar.show-nav ul  {
+                    display: block;
+
+                }
+                .navbar li {
+                    text-decoration: underline;
+                }
+                .PageShoppingPage {
+                    width: 99.5%;
+                    left: 0;
+                    align-items: center;
+                }
+                .buttonincreDecre {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+
+                                /************** INDEX *****************/
+                .titlecarrousel  {
+                    top: 0%;
+                    left: 10%;
+                    width: 80%;
+                    height: 80%;
+                    font-size: 5em;   
+                }
+                .boutonvoirboutique  {
+                    font-size: 1em;
+                    top: 60%;
+                    left: 30%;
+                    width: 50%
+                }
+                .carousel-cards img {
+                    height: 90vh;
+                }
+                
+                        /* PAGE BOUTIQUE */            
+                .pagecontent {
+                 flex-direction: column;
+                }
+                .pageboutique h1 {
+                    margin-left: 30%;
+                }
+                .filtreboutique {
+                    background-color: transparent;
+                    width: auto;
+                    padding-right: 0;
+                }
+                .listeboutique2 label , .InputPageContent {
+                    width: 20%;
+                }
+                #Notes h2 {text-decoration: underline;}
+                .pageboutique button{
+                    display: flex;
+                }
+                .hidden-li-CATEGORIES , .hidden-Prixlabel , .hidden-NotesLabel{
+                    display: none;
+                }
+                .ButtonToggleContent {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1vh;
+                }
+                .cross ,
+                .cross::before{
+                    display: block;
+                    width: 20px;
+                    height:3px;
+                    border-radius: 3px ;
+                    background-color: black;
+                    cursor: pointer;
+                }
+                .cross::before {
+                    position: absolute;
+                    content: "";
+                }
+                .hiddencross::before {transform: rotate(90deg);}
+                .produitboutique {
+                    display: flex;
+                    flex-direction: column;
+                }
+                ul.produitboutique {
+                    margin: 0; padding: 0;
+                }
+                .leftbar {
+                    margin-left: 0%;
+                }
+
+                .ProductById {
+                    flex-direction: column-reverse;
+                    gap: 5vh;
+                    margin: 5vh 5vh;
+                }
+                .ImgById img {
+                    width: 70%;
+                    margin-left: 15%;
+                }
+                .panier {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #reset button{
+                    margin-right: 5%;
+                }
+               
+                                /******* FOOTER **********/ 
+
+                footer {
+                    background-color: #B65F28;
+                    display: block;
+                }
+                .footer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+                .footer > div {
+                    width: 80%;
+                }
+                footer h3 {
+                    font-size: 1.7em;
+                }
+                .Contact p {
+                    line-height: 10vw;
+                }
+                .footer .fa-brands {
+                float: none; 
+                margin: 0.5em 0;   
+                 }
+                }
