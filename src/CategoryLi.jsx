@@ -1,6 +1,6 @@
 import React from "react";
 import { ItemPanier } from "./ItemPanier";
-import { Checkedbox } from "../components/checkedbox";
+import { Checkedbox } from "./checkedbox";
 
 const CategoryLi = ({ checkedItems, onCheckedChange }) => {
   const handleCheckboxChange = (productId) => {

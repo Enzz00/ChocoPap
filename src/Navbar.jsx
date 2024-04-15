@@ -1,12 +1,12 @@
-import { Link, NavLink, Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { createContext, useReducer } from "react";
+import { NavLink, Outlet } from 'react-router-dom';
+
 import { useState } from 'react';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAlignCenter, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { useContext } from 'react';
-import { PanierContext } from '../store/panier-context';
-import { ResetButton } from '../components/ResetButton';
+import { PanierContext } from './panier-context';
+import { ResetButton } from './ResetButton';
 
 
 

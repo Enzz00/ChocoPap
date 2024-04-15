@@ -1,6 +1,6 @@
 import { createContext, useReducer, useState } from "react";
-import { ItemPanier } from "../PAGES/ItemPanier";
-import NavBar from "../PAGES/Navbar";
+import { ItemPanier } from "./ItemPanier";
+import NavBar from "./Navbar";
 
 //items = elements dans le panier 
 export const PanierContext = createContext({

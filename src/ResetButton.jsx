@@ -1,4 +1,4 @@
-import { PanierContext } from "../store/panier-context";
+import { PanierContext } from "./panier-context";
 import { useContext } from "react"
 
 export const ResetButton = () => {

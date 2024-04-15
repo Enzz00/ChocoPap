@@ -1,15 +1,12 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import CarouselPage from './components/Carrousel';
-import { Link, NavLink, Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { SideBarBoutique } from './PAGES/SideBarBoutique';
-import Footer from './PAGES/Footer';
-import NavBar from './PAGES/Navbar';
-import React, { useState } from 'react';
-import { PanierContextProvider } from './store/panier-context';
-import Products from './PAGES/Products';
-import { Article } from './PAGES/Article';
-
-
+import CarouselPage from './Carrousel';
+import { SideBarBoutique } from './SideBarBoutique';
+import Footer from './Footer';
+import NavBar from './Navbar';
+import { PanierContextProvider } from './panier-context';
+import { Article } from './Article';
+import React from 'react';
+import {RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter ( [
  

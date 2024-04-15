@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { PanierContext } from "../store/panier-context"
+import { PanierContext } from "./panier-context"
 import { NavLink } from "react-router-dom";
 
 const ProductItem = ({product}) => {

@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
-import { PanierContext } from "../store/panier-context";
+import { PanierContext } from "./panier-context";
 import { ItemPanier } from "./ItemPanier";
-import { ResetButton } from "../components/ResetButton";
+import { ResetButton } from "./ResetButton";
 
 export function Article() {
     const { id } = useParams();
